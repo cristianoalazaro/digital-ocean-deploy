@@ -23,7 +23,8 @@ spec:
     spec:
       containers:
       - name: testecontainer
-        image: <IMAGE>
+        #image: <IMAGE>
+        image: 206a382
         securityContext:
           privileged: true
         ports:
