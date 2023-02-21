@@ -35,4 +35,4 @@ jobs:
         run: TAG=$(echo $GITHUB_SHA | head -c7) && sed -i 's|<IMAGE>|registry.digitalocean.com/testecontainer/digital-ocean-deploy:'${TAG}'|' $GITHUB_WORKSPACE/config/deployment.yml
 
       - name: Save config cluster
-        run: doctl kubernetes cluster kuberconfig save --expiry-seconds 600 testedeployks
+        run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 testedeployks
